@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>       
+
+        <div class="container">
+
+            <div class="user signinBox">
+
+                    <div class="imageBox"> <img src="login-image.jpg" alt=""></div>
+
+                    <div class="formBox">
+                        <form>
+                            <h2>Sign in</h2>
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <input type="submit" value="Login">
+                            <p>Don't have an account? 
+                                <a href="#" onclick="toggleForm();"> Sign Up </a> 
+                            </p>
+                        </form>              
+                    </div>
+
+            </div>
+            <div class="user signupBox">
+
+                
+
+                <div class="formBox">
+                    <form>
+                        <h2>Creat An Account</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Email Address">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <input type="submit" value="Sign Up">
+                        <p>Already have an account? 
+                            <a href="#" onclick="toggleForm();"> Sign In </a> 
+                        </p>
+                    </form>              
+                </div>
+                <div class="imageBox"> <img src="signup-image.jpg" alt=""></div>
+
+        </div>
+
+        </div>
+
+    </section>
+    
+    
+    <script type="text/javascript">
+        function toggleForm() {
+            container = document.querySelector('.container');
+            container.classList.toggle('active');
+            section = document.querySelector('section');
+            section.classList.toggle('active');
+        }
+    </script>
+        
+    
+
+</body>
+</html>
